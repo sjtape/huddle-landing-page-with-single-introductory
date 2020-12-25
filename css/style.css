@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+* {
+  -webkit-transition: all ease-in-out 250ms;
+  transition: all ease-in-out 250ms;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  background-color: #674baf;
+  width: 100%;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: white;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  max-height: 100%;
+  height: auto;
+}
+
+section {
+  width: 100%;
+  background: url("../images/bg-mobile.svg") no-repeat;
+  background-size: 100%;
+  height: 100vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  padding: 2em;
+  width: 80%;
+  max-width: 1440;
+  margin: 0 auto;
+}
+
+.logo {
+  padding: 0;
+  width: 8em;
+  margin-bottom: 1em;
+}
+
+.content {
+  text-align: center;
+}
+
+.content img {
+  margin-bottom: 1em;
+}
+
+.content .btn-reg {
+  margin-top: 1em;
+  margin-bottom: 2em;
+  display: inline-block;
+  width: 50%;
+  padding: 0.5em;
+  border-radius: 2em;
+  text-decoration: none;
+  color: #674baf;
+  background-color: white;
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(37, 37, 37, 0.75);
+          box-shadow: 2px 2px 5px 0px rgba(37, 37, 37, 0.75);
+}
+
+.btn-reg:hover,
+.btn-reg:focus {
+  background-color: #e882e8;
+}
+
+.social {
+  text-align: center;
+}
+
+.social li {
+  display: inline-block;
+  margin: 0 0.5em;
+  text-align: center;
+}
+
+.social a {
+  width: 1.5em;
+  display: block;
+  color: white;
+  border-radius: 50%;
+  border: 1px solid white;
+  padding: 0.5em;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.social a:hover,
+.social a:focus {
+  color: #e882e8;
+  border-color: #e882e8;
+}
+
+@media (min-width: 693px) {
+  .content img {
+    max-width: 60%;
+  }
+  .btn-reg {
+    max-width: 30%;
+    text-align: center;
+  }
+}
+
+@media (min-width: 960px) {
+  section {
+    width: 100%;
+    background: url("../images/bg-desktop.svg") no-repeat;
+    background-size: 100% 100%;
+  }
+  .content {
+    margin-top: 3em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .content img {
+    width: 50%;
+  }
+  .content .heading {
+    width: 40%;
+    text-align: left;
+    margin-right: 2em;
+  }
+  .content .heading h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5em;
+  }
+  .logo {
+    width: 20em;
+    margin-top: 2em;
+  }
+  .social {
+    text-align: right;
+    margin-right: 2em;
+  }
+}
+/*# sourceMappingURL=style.css.map */
